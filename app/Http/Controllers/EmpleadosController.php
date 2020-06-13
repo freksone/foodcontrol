@@ -153,14 +153,14 @@ return view ('empleados.edit',compact('empleado'));
      * @param  \App\empleados  $empleados
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Empleados $empleado)
+    public function destroy($id)
     {
         //
 
-        Storage::disk('public')->delete($empleado->Foto);
+        Storage::disk('public')->delete($id);
 
-
-        dd($empleado->delete());
+        $empleado =Empleados::findOrFail($id);
+        $empleado->delete();
         //return redirect('Empleados');
         return redirect('Empleados')->with('Mensaje','Empleado eliminado!');
     }
