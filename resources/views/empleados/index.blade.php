@@ -57,7 +57,7 @@
                     <a class="btn btn-warning" href="{{url ('/Empleados/'.$empleado->id.'/edit')}}">
                         Editar
                     </a>
-                    <form method="post" action="{{reoute('empleados.destroy',$empleado)}}" style="display:inline">
+                    <form method="post" action="{{route('empleados.destroy',$empleado)}}" style="display:inline">
                         {{ csrf_field() }}
                         {{method_field('DELETE')}}
                         <button class="btn btn-danger" type="submit"
