@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header">Comidas</div>
                     <div class="card-body">
-                        <a href="{{ url('/comidas/create') }}" class="btn btn-success btn-sm" title="Add New comida">
+                        <a href="{{ url('/Comidas/create') }}" class="btn btn-success btn-sm" title="Add New comida">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
