@@ -19,9 +19,9 @@ Route::get('/', function () {
 });
 
 
-Route::resource('Empleados', 'EmpleadosController')->middleware('auth');
-Route::resource('comidas', 'comidasController')->middleware('auth');
-Route::resource('join_table', 'JoinTableController')->middleware('auth');
+Route::resource('/Empleados', 'EmpleadosController')->middleware('auth');
+Route::resource('/Comidas', 'comidasController')->middleware('auth');
+Route::resource('/Join_table', 'JoinTableController')->middleware('auth');
 
 
 Auth::routes();

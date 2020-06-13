@@ -34,13 +34,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                  <li class="nav-item">
-                                <a class="nav-link" href="{{ route('Empleados.index') }}">{{ __('Empleados') }}</a>
+                                <a class="nav-link" href="{{ url('/Empleados') }}">{{ __('Empleados') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('comidas.index') }}">{{ __('Comidas') }}</a>
+                                <a class="nav-link" href="{{ url('/Comidas') }}">{{ __('Comidas') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/join_table') }}">{{ __('Menu') }}</a>
+                                <a class="nav-link" href="{{ url('/Join_table') }}">{{ __('Menu') }}</a>
                             </li>
 
                     </ul>

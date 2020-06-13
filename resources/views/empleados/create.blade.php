@@ -18,7 +18,7 @@
 @endif
 <form action="{{url('/Empleados')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
 {{ csrf_field() }}
-@include('Empleados.form',['Modo'=>'crear'])
+@include('empleados.form',['Modo'=>'crear'])
 
 </form>
 </div>
