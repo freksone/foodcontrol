@@ -158,9 +158,9 @@ return view ('empleados.edit',compact('empleado'));
         //
 
         Storage::disk('public')->delete($empleado->Foto);
-        $empleado->delete();
 
 
+        dd($empleado->delete());
         //return redirect('Empleados');
         return redirect('Empleados')->with('Mensaje','Empleado eliminado!');
     }
