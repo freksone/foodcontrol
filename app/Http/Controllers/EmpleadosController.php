@@ -97,7 +97,7 @@ $this->validate($request,$campos,$Mensaje);
     public function edit($id)
     {
 $empleado = Empleados::findOrFail($id);
-return view ('Empleados.edit',compact('empleado'));
+return view ('empleados.edit',compact('empleado'));
     }
 
     /**
