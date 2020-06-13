@@ -41,23 +41,23 @@
         </thead>
         <tbody>
 
-            @foreach($empleados as $empleado)
+            @foreach($empleado as $empleados)
 
 
             <tr>
                 <td>{{$loop->iteration}}</td>
                 <td>
-                    <img src="{{asset('storage').'/'.$empleado->Foto}}" class="img-thumbnail img-fluid" alt=""
+                    <img src="{{asset('storage').'/'.$empleados->Foto}}" class="img-thumbnail img-fluid" alt=""
                         width="100">
                 </td>
-                <td>{{$empleado->Nombre}} {{$empleado->ApellidoPaterno}} {{$empleado->ApellidoMaterno}} </td>
-                <td> {{$empleado->Area}}</td>
-                <td>{{$empleado->Correo}}</td>
+                <td>{{$empleados->Nombre}} {{$empleados->ApellidoPaterno}} {{$empleados->ApellidoMaterno}} </td>
+                <td> {{$empleados->Area}}</td>
+                <td>{{$empleados->Correo}}</td>
                 <td>
-                    <a class="btn btn-warning" href="{{url ('/Empleados/'.$empleado->id.'/edit')}}">
+                    <a class="btn btn-warning" href="{{url ('/Empleados/'.$empleados->id.'/edit')}}">
                         Editar
                     </a>
-                    <form method="post" action="{{route('Empleados.destroy',$empleado)}}" style="display:inline">
+                    <form method="post" action="{{route('Empleados.destroy',$empleados)}}" style="display:inline">
                         {{ csrf_field() }}
                         {{method_field('DELETE')}}
                         <button class="btn btn-danger" type="submit"
