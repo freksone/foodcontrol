@@ -56,7 +56,7 @@ class comidasController extends Controller
 
         comida::create($requestData);
 
-        return redirect('comidas')->with('flash_message', 'comida added!');
+        return redirect('/Comidas')->with('flash_message', 'comida added!');
     }
 
     /**
