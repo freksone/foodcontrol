@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\empleados;
+use App\Empleados;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 class EmpleadosController extends Controller

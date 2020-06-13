@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-//Route::get('/Empleados', 'EmpleadosController@index' );
-//Route::get('/Empleados/create', 'EmpleadosController@create');
 
 Route::resource('Empleados', 'EmpleadosController')->middleware('auth');
 Route::resource('comidas', 'comidasController')->middleware('auth');
