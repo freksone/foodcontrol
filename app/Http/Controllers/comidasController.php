@@ -117,6 +117,6 @@ class comidasController extends Controller
     {
         comida::destroy($id);
 
-        return redirect('comidas')->with('flash_message', 'comida deleted!');
+        return redirect('/Comidas')->with('flash_message', 'comida deleted!');
     }
 }
