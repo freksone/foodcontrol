@@ -103,7 +103,7 @@ class comidasController extends Controller
         $comida = comida::findOrFail($id);
         $comida->update($requestData);
 
-        return redirect('comidas')->with('flash_message', 'comida updated!');
+        return redirect('/Comidas')->with('flash_message', 'comida updated!');
     }
 
     /**
